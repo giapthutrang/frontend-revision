@@ -55,16 +55,16 @@ export default class Class extends React.Component {
       return (
         <Grid Container component="main" maxWidth="xs">
           <div style={{
-            marginTop: 100,
+            marginTop: 30,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
           }}>
             <Typography component="h1" variant="h5">
-              Sign up
+              LOG IN
             </Typography>
             <form style={{
-              width: '100%',
+              width: '30%',
               marginTop: 15,
             }}>
               <Grid container spacing={0}>
@@ -106,8 +106,9 @@ export default class Class extends React.Component {
                   fullWidth
                   variant="contained"
                   color="primary"
+                  style={{color:'black',backgroundColor: "orange"}}
                   onClick={() => this.login()}>
-                  LOGIN
+                  Log In
                   </Button>
                 {this.state.isLoginFailed
                   ?
